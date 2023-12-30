@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 services:
   node-app:
     image: faresatef/qwitter:backend
@@ -6,7 +6,9 @@ services:
       context: .
     container_name: api-cont
     ports:
-      - "3000:3000"
+      - '3000:3000'
+      - '5000:5000'
+      - '1982:1982'
     env_file:
       - .env
       

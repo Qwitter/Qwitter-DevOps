@@ -1,0 +1,14 @@
+- name: custom_rules
+  rules:
+    - record: node_memory_UsedMem_percentage
+      expr: 100-(100*node_memory_MemFree_bytes/node_memory_MemTotal_bytes)
+- name: alert_rules
+  rules:
+    - alert: InstanceDown5
+      expr: up == 0
+      for: 1m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Instance [{{ $labels.instance }}] down"
+        description: "[{{ $labels.instance }}] of job [{{ $labels.job }}] has been down for more than a minute"

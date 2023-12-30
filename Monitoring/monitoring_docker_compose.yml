@@ -1,0 +1,26 @@
+services:
+  grafana:
+    image: "grafana/grafana"
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+       - './grafana_data:/var/lib/grafana/'
+       - './grafana_provisioning:/etc/grafana/provisioning/'
+    user:  '$UID:$GID'
+    networks:
+      - net
+  prometheus:
+    image: "prom/prometheus"
+    container_name: "prometheus"
+    user: "root"
+    volumes:
+      - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "./prometheus_rules.yml:/etc/prometheus/prometheus_rules.yml"
+      - "./prometheus-data:/prometheus"
+    ports:
+      - "8000:9090"
+    networks:
+      - net
+networks:
+  net:
