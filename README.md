@@ -4,14 +4,14 @@
 This repository contains all the DevOps files needed for Qwitter (X clone). I have used various tools on this project, and it was deployed on Azure, and the database was hosted on AWS (RDS).
 
 # Tools
-- Docker
-- Jenkins
-- Prometheus
-- Grafana
-- AWS
-- Azure
-- Watchtower
-- ClouDNS
+- [Docker](https://github.com/Qwitter/Qwitter-DevOps#docker)
+- [Jenkins](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#jenkins)
+- [Prometheus](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#prometheus)
+- [Grafana](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#grafana)
+- [AWS](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#aws)
+- [Azure](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#azure)
+- [Watchtower](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#watchtower)
+- [ClouDNS](https://github.com/Qwitter/Qwitter-DevOps?tab=readme-ov-file#cloudns)
 
 ## Docker
 Docker was used to containerize both the backend and frontend projects, making it easy to deploy them on hosted servers.
