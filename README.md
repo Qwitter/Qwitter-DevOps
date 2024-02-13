@@ -65,3 +65,9 @@ Watchtower is an application that monitors running containers for changes to the
 
 # ClouDNS
 I utilized clouDNS to obtain the domain name for Qwitter (qwitter.cloudns.org) and a sub-domain for the backend server (back.qwitter.cloudns.org).
+
+## ©️Developers
+
+| Name                 |         Email          |
+|----------------------|:----------------------:|
+| Fares Atef           | faresatef553@gmail.com |
